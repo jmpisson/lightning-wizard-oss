@@ -1,0 +1,30 @@
+{
+    "name": "lightning-wizard-oss",
+    "version": "1.0.1",
+    "description": "Lightning Web Component to build flows within Lightning Open Source Web Component projects",
+    "repository": {
+      "type" : "git",
+      "url" : "https://github.com/jmpisson/lightning-wizard-oss"
+    },
+    "files": [
+
+        "package.json"
+    ],
+    "lwc": {
+        "mapNamespaceFromPath": true,
+        "modules": [
+            {
+                "dir": "src"
+            },
+            {
+                "npm": "lightning-base-components"
+            }
+        ],
+        "expose": [
+            "lightning/wizard",
+            "lightning/wizardStep"
+        ]
+    },
+    "author": "jmpisson",
+    "license": "MIT"
+}
