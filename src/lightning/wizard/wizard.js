@@ -155,7 +155,7 @@ export default class Wizard extends LightningElement {
     * Determines the wizard flow based on component body slot
     */
     configSteps() {
-        var stepComponents = this.querySelectorAll('c-wizard-step'), self = this;
+        var stepComponents = this.querySelectorAll('lightning-wizard-step'), self = this;
 
         this.flow = Array.prototype.map.call(stepComponents, (step, index) => {
             self.steps[step.name].methods.config({
