@@ -25,7 +25,7 @@
 
 ## About
 
-This Web Component is a Web Component built from https://github.com/jmpisson/lightning-wizard(Lightning Wizard) to use within a Lightning Web Component OSS Project.
+This Web Component is a Web Component built from [Lightning Wizard](https://github.com/jmpisson/lightning-wizard) intended to use within a Lightning Web Component OSS Project.
 
 It aims to provide a way to programatically build flows with Salesforce Flow styles and functionality, having full control of the wizard behavior in any scenario.
 
@@ -41,7 +41,35 @@ It aims to provide a way to programatically build flows with Salesforce Flow sty
 A `lightning-wizard` display a guided flow with multiple steps, only one is visible at a time. The progress is shown on the header along with a current step indicator.
 
 
+## Usage
 
+As referenced on last LWC RFC, include the npm reference within your `lwc.config.json` or directly on your `package.json`.
+
+> At this moment, `lightning-wizard` does not work with native Shadow DOM. It requires Synthetic Shadow DOM. Import `@lwc/synthetic-shadow` before using the component.
+
+_package.json example_
+````
+{
+    "lwc": {
+        "modules": [
+            { 
+                "npm": "lightning-wizard-oss" 
+            }
+        ]
+    }
+}
+````
+lwc.config.json example_
+````
+{
+    "modules": [
+        { 
+            "npm": "lightning-wizard-oss" 
+        }
+    ]
+}
+````
+Check the `examples` folder for implementation details.
 
 ## Specification
 

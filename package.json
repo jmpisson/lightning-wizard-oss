@@ -1,6 +1,6 @@
 {
     "name": "lightning-wizard-oss",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Lightning Web Component to build flows within Lightning Open Source Web Component projects",
     "repository": {
       "type" : "git",

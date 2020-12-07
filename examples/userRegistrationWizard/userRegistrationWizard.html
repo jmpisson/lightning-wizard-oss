@@ -1,0 +1,12 @@
+<template>
+    <lightning-wizard header="Registration" variant="path" current-step="step-1" oncomplete={register}>
+        <lightning-wizard-step label="Account Details" name="step-1" before-change={validate}>
+            <lightning-input label="Username" data-field-name="Username" required></lightning-input>
+            <lightning-input label="Email" data-field-name="Email"></lightning-input>
+        </lightning-wizard-step>
+        <lightning-wizard-step label="Account Options" name="step-2">
+            <lightning-input label="Name" type="text" data-field-name="Name"></lightning-input>
+            <lightning-input label="Lastname" type="text" data-field-name="Lastname"></lightning-input>
+        </lightning-wizard-step>
+    </lightning-wizard>
+</template>
